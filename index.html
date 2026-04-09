@@ -33,7 +33,7 @@
             background-color: var(--color-fondo); position: sticky; top: 0; z-index: 1000;
         }
         .logo { font-size: 1.2rem; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
-        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; align-items: center; }
         nav a { font-size: 0.85rem; font-weight: 500; text-transform: uppercase; transition: color 0.3s; }
         nav a:hover { color: #666; border-bottom: 2px solid var(--color-texto); }
 
@@ -41,9 +41,14 @@
         .btn {
             display: inline-block; padding: 12px 24px; background-color: var(--color-texto);
             color: var(--color-fondo); font-weight: bold; font-size: 0.9rem; text-transform: uppercase;
-            border-radius: 4px; transition: background 0.3s; margin-top: 20px;
+            border-radius: 4px; transition: background 0.3s; margin-top: 20px; margin-right: 10px;
         }
         .btn:hover { background-color: #555; color: white; }
+        
+        .btn-outline {
+            background-color: transparent; color: var(--color-texto); border: 2px solid var(--color-texto);
+        }
+        .btn-outline:hover { background-color: var(--color-texto); color: var(--color-fondo); }
 
         /* Sección Hero */
         .hero { padding: 100px 20px; text-align: left; }
@@ -95,7 +100,7 @@
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2.5rem; }
-            nav ul { flex-wrap: wrap; justify-content: center; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
             header { flex-direction: column; gap: 15px; }
         }
     </style>
@@ -109,8 +114,8 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Acerca de mí</a></li>
                 <li><a href="#especializacion">Especialización</a></li>
-                <li><a href="#articulos">Artículos</a></li>
                 <li><a href="#educacion">Educación</a></li>
+                <li><a href="https://aloiramfund.beehiiv.com/" target="_blank" style="font-weight: 700; border-bottom: 2px solid var(--color-texto);">Newsletter</a></li>
             </ul>
         </nav>
     </header>
@@ -119,6 +124,7 @@
         <h1>Systems Entrepreneur & Policy Analyst.</h1>
         <p>Conecto innovación social, economía regenerativa y financiación de impacto para que las soluciones sistémicas funcionen y escalen.</p>
         <a href="mailto:aloiramfund@gmail.com" class="btn">Contactar</a>
+        <a href="https://aloiramfund.beehiiv.com/" target="_blank" class="btn btn-outline">Leer mi Newsletter</a>
     </section>
 
     <section id="sobre-mi" class="about">
@@ -180,13 +186,13 @@
                 <p>Reflexiones sobre fundraising, economía regenerativa y la brecha de financiación tecnológica.</p>
             </div>
             <div class="articles-list">
+                <a href="https://aloiramfund.beehiiv.com/" target="_blank" class="article-item">
+                    <h3>Suscríbete a mi Newsletter Oficial</h3>
+                    <p>Únete a mi comunidad en Beehiiv donde comparto análisis en profundidad sobre estrategias de captación de fondos y ecosistemas de impacto. Suscribirse &rarr;</p>
+                </a>
                 <a href="#" class="article-item">
                     <h3>La brecha estructural en la financiación tecnológica liderada por mujeres</h3>
                     <p>Análisis sobre cómo las herramientas financieras y la IA pueden redirigir el capital hacia soluciones FemTech. Leer más &rarr;</p>
-                </a>
-                <a href="#" class="article-item">
-                    <h3>De la política a la tierra: modelos económicos regenerativos</h3>
-                    <p>Lecciones aprendidas desde la COP28 y el desarrollo de sistemas de innovación rural. Leer más &rarr;</p>
                 </a>
             </div>
         </div>
@@ -225,8 +231,9 @@
             </div>
             
             <div class="social-links">
-                <a href="https://instagram.com/TU_USUARIO" target="_blank">Instagram</a>
-                <a href="https://linkedin.com/in/mariolavalderrain-navarro" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank">LinkedIn</a>
+                <a href="https://aloiramfund.beehiiv.com/" target="_blank">Newsletter</a>
             </div>
             
             <div class="legal">
