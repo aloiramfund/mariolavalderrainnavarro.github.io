@@ -3,80 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mariola Valderraín Navarro. Consultora Fundraising y Estrategia, Policy Analyst y especialista en economía regenerativa e innovación social.">
-    <title>Mariola Valderraín Navarro | Consultora Fundraising y Estrategia</title>
+    <meta name="description" content="Mariola Valderraín Navarro — Consultora de Fundraising y Estrategia. Ayudo a organizaciones de impacto a acceder a financiación pública, europea y filantrópica. Reconocida en COP28, Ashoka y Top 50 World Women 2024.">
     
+    <meta property="og:title" content="Mariola Valderraín Navarro | Consultora Fundraising y Estrategia">
+    <meta property="og:description" content="Estrategia de impacto, fundraising institucional y economía regenerativa. Reconocida en COP28, Ashoka y Top 50 World Women.">
+    <meta property="og:image" content="https://mariolavalderrainnavarro.com/foto-principal.jpg">
+    <meta property="og:url" content="https://mariolavalderrainnavarro.com">
+    <meta property="og:type" content="website">
+
+    <title>Mariola Valderraín Navarro | Consultora Fundraising y Estrategia</title>
     <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mariola Valderraín Navarro",
+      "jobTitle": "Consultora de Fundraising y Estrategia",
+      "url": "https://mariolavalderrainnavarro.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/mariola-valderrain-navarro/",
+        "https://www.instagram.com/mariolavn/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      }
+    }
+    </script>
 
     <style>
         :root {
             --color-fondo: #ffffff;
             --color-texto: #1a1a1a;
-            --color-gris-claro: #f8f8f8;
+            --color-gris-claro: #f9f9f9;
             --color-gris-borde: #dddddd;
             --color-oscuro: #111111;
             --color-rubi: #B01A23; 
         }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0; padding: 0;
-            color: var(--color-texto); background-color: var(--color-fondo);
-            line-height: 1.6;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: var(--color-texto); line-height: 1.6; }
         a { color: inherit; text-decoration: none; }
-        h1, h2, h3, h4 { font-weight: 600; margin-bottom: 20px; }
+        h1, h2, h3 { font-weight: 600; margin-bottom: 20px; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 20px 20px; background-color: var(--color-oscuro); color: #fff;
-            position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333;
-        }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; background-color: var(--color-oscuro); color: #fff; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
         .logo { font-size: 1.1rem; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; }
         nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; align-items: center; }
         nav a { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; color: #ccc; }
-        
         nav a:hover { color: var(--color-rubi); }
-        
-        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); }
+        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); font-weight: bold; }
         .btn-nav:hover { background-color: #90151C; border-color: #90151C; }
 
-        .hero { padding: 80px 20px; background-color: var(--color-fondo); border-bottom: 1px solid var(--color-gris-borde); }
+        .hero { padding: 100px 20px; background-color: var(--color-fondo); border-bottom: 1px solid var(--color-gris-borde); }
         .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        
         .hero h1 { font-size: 3.2rem; margin-bottom: 20px; line-height: 1.1; font-weight: 700; letter-spacing: -1px; }
         .hero h1 span { color: var(--color-rubi); }
-        
-        .hero p { font-size: 1.2rem; color: #555; margin-bottom: 40px; max-width: 95%; }
-        
-        .hero-img {
-            background-color: #eee; height: 450px; border-radius: 12px;
-            background-image: url('foto-principal.jpg'); 
-            background-size: cover; background-position: center;
-        }
+        .hero p { font-size: 1.2rem; color: #555; margin-bottom: 30px; max-width: 95%; }
+        .hero-img { background-color: #eee; height: 450px; border-radius: 12px; background-image: url('foto-principal.jpg'); background-size: cover; background-position: center; }
 
-        .logos-section { padding: 40px 20px; text-align: center; background-color: var(--color-fondo); }
+        /* Nuevas Secciones de Conversión */
+        .arquitectura-clientes { padding: 80px 20px; background-color: var(--color-gris-claro); text-align: center; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px; text-align: left; }
+        .card-paso { background: #fff; padding: 30px; border-top: 3px solid var(--color-rubi); box-shadow: 0 4px 15px rgba(0,0,0,0.03); }
+
+        .logos-section { padding: 60px 20px; text-align: center; border-bottom: 1px solid var(--color-gris-borde); background: #fff; }
         .logos-section p { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 30px; }
         .logos-grid { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; align-items: center; opacity: 0.5; }
         .logos-grid span { font-size: 1.4rem; font-weight: bold; color: #444; }
 
-        footer { padding: 80px 20px; text-align: center; background-color: var(--color-oscuro); color: #fff; border-top: 1px solid #333; }
-        footer h2 { font-size: 2rem; }
-        .social-links { margin: 30px 0; }
-        .social-links a { margin: 0 15px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: #aaa; }
-        
-        .social-links a:hover { color: var(--color-rubi); }
-        
-        .legal { margin-top: 50px; font-size: 0.75rem; color: #666; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .legal a { color: #666; text-decoration: underline; }
+        .testimonial { padding: 80px 20px; text-align: center; background-color: var(--color-oscuro); color: #fff; }
+        blockquote { font-size: 1.5rem; font-style: italic; max-width: 800px; margin: 0 auto 20px; line-height: 1.4; color: #eee; }
+        cite { font-size: 0.9rem; color: #aaa; font-style: normal; text-transform: uppercase; letter-spacing: 1px; }
 
-        @media (max-width: 768px) {
-            .hero-grid { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 2.2rem; }
-            nav ul { display: none; }
-            header { flex-direction: column; gap: 15px; }
-        }
+        footer { padding: 80px 20px; text-align: center; background-color: var(--color-fondo); border-top: 1px solid var(--color-gris-borde); }
+        .social-links { margin: 30px 0; }
+        .social-links a { margin: 0 15px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: #666; font-weight: bold; }
+        .social-links a:hover { color: var(--color-rubi); }
+        .legal { margin-top: 50px; font-size: 0.75rem; color: #888; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+
+        @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 2.2rem; } nav ul { display: none; } header { flex-direction: column; gap: 15px; } }
     </style>
 </head>
 <body>
@@ -85,11 +91,11 @@
         <div class="logo">Mariola Valderraín Navarro</div>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Acerca de mí</a></li>
+                <li><a href="index.html" style="color: #fff; border-bottom: 2px solid var(--color-rubi);">Inicio</a></li>
                 <li><a href="especializacion.html">Especialización</a></li>
+                <li><a href="sobre-mi.html">Acerca de mí</a></li>
                 <li><a href="https://aloiramfund.beehiiv.com/" target="_blank">Newsletter</a></li>
-                <li><a href="mailto:aloiramfund@gmail.com" class="btn-nav">Contacto</a></li>
+                <li><a href="mailto:aloiramfund@gmail.com" class="btn-nav">Agendar Llamada</a></li>
             </ul>
         </nav>
     </header>
@@ -99,9 +105,34 @@
             <div>
                 <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; font-weight: bold; color: #888;">Consultora Fundraising y Estrategia</p>
                 <h1>Conecto innovación, instituciones <span>y finanzas de impacto.</span></h1>
-                <p>Estrategia en economía regenerativa y marcos regulatorios para que los proyectos sistémicos funcionen y escalen.</p>
+                
+                <p>Ayudo a organizaciones de impacto a conseguir la financiación que merecen. Diseño la estrategia, construyo las propuestas y conecto con los fondos adecuados.</p>
+                
+                <a href="https://calendly.com/" target="_blank" class="btn-nav" style="display:inline-block; margin-top: 10px; font-size: 1rem; padding: 12px 25px;">Solicita una sesión estratégica gratuita</a>
             </div>
             <div class="hero-img"></div>
+        </div>
+    </section>
+
+    <section class="arquitectura-clientes">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; color: var(--color-oscuro);">De la idea al capital en 3 fases</h2>
+            <p style="color: #666; max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Estructuro la captación de fondos eliminando la fricción institucional para ONGs, startups de impacto y organizaciones sociales.</p>
+            
+            <div class="grid-3">
+                <div class="card-paso">
+                    <h3 style="color: var(--color-rubi); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">01. Diagnóstico</h3>
+                    <p>Auditoría del ecosistema de la organización y viabilidad para encajar en fondos europeos (NextGen), subvenciones públicas y capital filantrópico.</p>
+                </div>
+                <div class="card-paso">
+                    <h3 style="color: var(--color-rubi); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">02. Estrategia y Relato</h3>
+                    <p>Traducción de proyectos complejos en narrativas de impacto irresistibles para financiadores institucionales y privados.</p>
+                </div>
+                <div class="card-paso">
+                    <h3 style="color: var(--color-rubi); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">03. Ejecución y Alianzas</h3>
+                    <p>Conexión directa con ecosistemas de innovación (como Ashoka) y presentación impecable de convocatorias.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -118,16 +149,22 @@
         </div>
     </section>
 
-    <footer id="contacto">
+    <section class="testimonial">
         <div class="container">
-            <h2>Conectemos para nuevos proyectos</h2>
+            <blockquote>"Mariola ha demostrado ser una persona resolutiva, con un compromiso constante por la innovación, la eficiencia y la ejecución."</blockquote>
+            <cite>— Mauro Ferrándiz, Consultant en Transición Ecológica, Talento para el Futuro</cite>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2 style="color: var(--color-oscuro);">¿Preparado para escalar tu impacto?</h2>
+            <a href="https://calendly.com/" target="_blank" class="btn-nav" style="display:inline-block; margin: 20px 0;">Agendar sesión de 20 minutos</a>
+            
             <div class="social-links">
-                <a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a>
                 <a href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a>
-            </div>
-            <div class="contact-info" style="color: #aaa; margin-bottom: 40px;">
-                <p>+34 666 305 194</p>
             </div>
             
             <div class="legal">
