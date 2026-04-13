@@ -3,67 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conoce a Mariola Valderraín Navarro, experta en Fundraising. Formación multidisciplinar en IA, Innovación, Derecho y un Fast MBA.">
-    
-    <meta property="og:title" content="Sobre mí | Mariola Valderraín Navarro">
-    <meta property="og:description" content="Emprendedora sistémica y estratega de innovación social.">
-    <meta property="og:image" content="https://mariolavalderrainnavarro.com/foto-secundaria.jpg">
-    <meta property="og:url" content="https://mariolavalderrainnavarro.com/sobre-mi.html">
-
     <title>Sobre mí | Mariola Valderraín Navarro</title>
     <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg">
     <style>
-        :root { --color-fondo: #ffffff; --color-texto: #1a1a1a; --color-oscuro: #111111; --color-rubi: #B01A23; --color-gris-borde: #dddddd; }
+        /* (Pega aquí exactamente el mismo bloque <style> que tienes en el index.html para mantener la coherencia, 
+        añadiendo solo lo siguiente para los textos de esta página) */
+        :root { --color-fondo: #ffffff; --color-texto: #1a1a1a; --color-oscuro: #111111; --color-rubi: #B01A23; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: var(--color-texto); line-height: 1.6; }
         a { color: inherit; text-decoration: none; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; background-color: var(--color-oscuro); color: #fff; position: sticky; top: 0; z-index: 1000; }
-        .logo { font-size: 1.1rem; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; }
-        nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; align-items: center; }
-        nav a { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: #ccc; transition: 0.3s; }
-        nav a:hover { color: var(--color-rubi); }
-        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); font-weight: bold;}
-        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; background-color: var(--color-oscuro); color: #fff; position: sticky; top: 0; border-bottom: 1px solid #333; z-index: 1000;}
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-family: "Georgia", serif; transition: color 0.3s;}
+        .logo:hover { color: var(--color-rubi); }
+        nav ul { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; align-items: center; flex-wrap: wrap; }
+        nav a { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; color: #ccc; }
+        nav a:hover, nav a.activo { color: var(--color-rubi); }
+        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); font-weight: bold; }
         .page-header { padding: 60px 20px 20px; }
         .page-header h1 { font-size: 2.5rem; max-width: 800px; line-height: 1.2; font-weight: 600; margin-bottom: 40px; }
         .page-header h1 span { color: var(--color-rubi); }
-        
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 40px 20px 60px; align-items: start; }
-        .about-text h2 { font-size: 2rem; margin-top: 0; margin-bottom: 20px; }
-        .about-text p { font-size: 1.1rem; color: #444; margin-bottom: 20px; }
-        .about-img { background-color: #eee; height: 500px; border-radius: 8px; background-image: url('foto-secundaria.jpg'); background-size: cover; background-position: center; }
-        
-        .education-box { background: #f9f9f9; padding: 30px; border-left: 4px solid var(--color-rubi); margin-top: 40px; }
-        .education-box h3 { font-size: 1.2rem; margin-top: 0; text-transform: uppercase; letter-spacing: 1px; color: var(--color-oscuro); }
-        .education-box ul { padding-left: 20px; }
-        .education-box li { margin-bottom: 10px; font-size: 1.05rem; color: #555; }
-
-        .authority-band { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 80px 20px; border-top: 1px solid var(--color-gris-borde); background-color: #f9f9f9; }
-        .authority-item h3 { font-size: 3rem; margin: 0 0 10px 0; color: var(--color-oscuro); }
-        .authority-item p { font-size: 1.1rem; color: #555; }
-        
-        .cta-section { text-align: center; padding: 80px 20px; background: #fff; border-top: 1px solid #eee; }
-
-        footer { padding: 80px 20px; text-align: center; background-color: var(--color-oscuro); color: #fff; }
-        .social-links { margin: 30px 0; }
-        .social-links a { margin: 0 15px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: #aaa; }
-        .social-links a:hover { color: var(--color-rubi); }
-        
-        @media (max-width: 768px) { .about-grid, .authority-band { grid-template-columns: 1fr; } nav ul { display: none; } }
+        .about-content { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; padding: 40px 20px 100px; align-items: start; }
+        .text-block p { font-size: 1.1rem; color: #444; margin-bottom: 20px; }
+        .awards-box { background: #f9f9f9; padding: 30px; border-left: 4px solid var(--color-rubi); }
+        .awards-box h3 { margin-top: 0; color: var(--color-oscuro); text-transform: uppercase; letter-spacing: 1px; }
+        .awards-box ul { padding-left: 20px; color: #555; }
+        .awards-box li { margin-bottom: 10px; }
+        /* Copia el CSS del footer del index aquí */
+        footer { padding: 60px 20px 40px; background-color: var(--color-oscuro); color: #fff; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { color: var(--color-rubi); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 20px; }
+        .footer-col ul { list-style: none; padding: 0; margin: 0; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col a { color: #ccc; font-size: 0.85rem; transition: 0.3s; }
+        .footer-bottom { border-top: 1px solid #333; padding-top: 30px; text-align: center; }
+        @media (max-width: 768px) { .about-content { grid-template-columns: 1fr; } nav ul { display: none;} }
     </style>
 </head>
 <body>
-
     <header>
-        <div class="logo">Mariola Valderraín Navarro</div>
+        <a href="index.html" class="logo">Mariola Valderraín Navarro</a>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li<>
                 <li><a href="especializacion.html">Especialización</a></li>
-                <li><a href="sobre-mi.html" style="color: #fff; border-bottom: 2px solid var(--color-rubi);">Acerca de mí</a></li>
-                <li><a href="https://aloiramfund.beehiiv.com/" target="_blank">Newsletter</a></li>
-                <li><a href="mailto:aloiramfund@gmail.com" class="btn-nav">Agendar Llamada</a></li>
+                <li><a href="sobre-mi.html" class="activo">Sobre mí</a></li>
+                <li><a href="charlas.html">Charlas</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="formacion.html">Formación</a></li>
+                <li><a href="mailto:aloiramfund@gmail.com" class="btn-nav">Contactar</a></li>
             </ul>
         </nav>
     </header>
@@ -72,47 +58,67 @@
         <h1>Más que relato: estratega de impacto, <span>analista de políticas y emprendedora sistémica.</span></h1>
     </div>
 
-    <section class="container about-grid">
-        <div class="about-text">
-            <h2>Acerca de mí</h2>
-            <p>Trabajo en la intersección de la economía regenerativa, las finanzas de impacto y la innovación social. Dirijo la estrategia de captación de fondos en Talento para el Futuro y soy fundadora de Mulching Regenerativo, una iniciativa galardonada enfocada en la resiliencia ecológica.</p>
-            <p>Mi compromiso con el liderazgo femenino me ha llevado a ser seleccionada por el MITECO para representar la innovación en la COP28 en Dubái, así como a ser reconocida en el programa Top 50 World Women de Häagen-Dazs.</p>
-            <div class="container" style="padding: 40px 20px; background: #f9f9f9; margin-bottom: 60px; border-left: 4px solid #111;">
-        <h3 style="color: #B01A23; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Bio para medios y eventos</h3>
-        <p style="font-size: 1.1rem; color: #444; font-style: italic;">
-            "Mariola Valderraín Navarro es estratega de políticas públicas y consultora de fundraising especializada en economía regenerativa e innovación social. Actualmente es la Directora de Fundraising en Talento para el Futuro y ha sido reconocida a nivel internacional en el Top 50 World Women 2024 de Häagen-Dazs. Con formación en Derecho, Ciencias Políticas, Criminología y un Máster en Inteligencia Artificial, su labor en el desarrollo de infraestructuras sostenibles la llevó a representar a España en la Cumbre del Clima de Naciones Unidas (COP28)."
-        </p>
-    </div>
-            <div class="education-box">
-                <h3>Base Académica y Ejecutiva</h3>
-                <p>Mi rigor técnico para estructurar estrategias financieras y proyectos normativos complejos se fundamenta en un perfil 360º:</p>
-                <ul>
-                    <li><strong>Máster en IA e Innovación</strong> por Founderz.</li>
-                    <li><strong>Fast MBA</strong> por el Instituto de Emprendimiento Avanzado.</li>
-                    <li><strong>MBA</strong> por la Universidad Complutense de Madrid.</li>
-                    <li><strong>Doble Grado en Derecho y Ciencias Políticas</strong> por la UCM.</li>
-                    <li><strong>Grado en Criminología</strong> por la UNED.</li>
-                </ul>
-            </div>
+    <section class="container about-content">
+        <div class="text-block">
+            <h2 style="font-size: 2rem;">Quién soy</h2>
+            <p>Mi trayectoria profesional en la intersección de la economía regenerativa, las finanzas de impacto y la innovación social no se entiende sin mi experiencia vital. Desde joven, la disciplina y la perseverancia han sido los pilares de mi día a día, forjados a través de años de entrenamiento como <strong>taekwondista</strong>. Esa misma sensibilidad y capacidad de estructurar ideas complejas se nutrió durante mi paso por el <strong>bachillerato de artes</strong>, enseñándome que la creatividad es indispensable para resolver los problemas sistémicos de nuestra era.</p>
+            <p>Hoy, con base en Madrid, canalizo esa misma disciplina estratégica como Directora de Fundraising en Talento para el Futuro y como fundadora de Mulching Regenerativo. Poseo un perfil 360º respaldado por una formación académica incesante, que me permite no solo imaginar soluciones, sino dotarlas de la infraestructura financiera y regulatoria para que se hagan realidad.</p>
+            <p>Mi compromiso con la acción climática y el liderazgo me ha llevado a cruzar fronteras, representando la innovación en la Cumbre del Clima (COP28) en Dubái y consolidando alianzas para reducir la brecha de financiación en proyectos tecnológicos liderados por mujeres.</p>
         </div>
-        <div class="about-img"></div>
-    </section>
-
-    <section class="cta-section container">
-        <h2 style="font-size: 2rem;">Únete a la conversación</h2>
-        <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">Cada semana analizo ecosistemas de ayudas y finanzas de impacto en Aloiramfund.</p>
-        <a href="https://aloiramfund.beehiiv.com/" target="_blank" class="btn-nav" style="padding: 15px 30px; font-size: 1.1rem; color: #fff;">Suscríbete a mi Newsletter Oficial</a>
+        
+        <div class="awards-box">
+            <h3>Premios y Reconocimientos</h3>
+            <ul>
+                <li><strong>Top 50 World Women 2024</strong> - Häagen-Dazs.</li>
+                <li><strong>Ganadora Generación Clima (COP28)</strong> - Dubái (MITECO).</li>
+                <li><strong>Finalista Internacional</strong> - Ashoka Changemakers Challenge II.</li>
+                <li><strong>Reconocimiento en Vitoria</strong> a la innovación y liderazgo.</li>
+                <li><strong>Jurado Oficial</strong> - Premios Emprende Coca-Cola.</li>
+                <li><strong>Galardonada</strong> - Premios Compluemprende (UCM).</li>
+                <li><strong>Publicación Docta UCM</strong> - TFG sobre Startups y Empresas Sociales.</li>
+                <li><strong>Ganadora Invest Day</strong> - Iniciativa FemTech HERA (FPDI).</li>
+            </ul>
+            
+            <h3 style="margin-top: 30px;">Formación Clave</h3>
+            <ul>
+                <li>Doble Grado en Derecho y Ciencias Políticas (UCM).</li>
+                <li>Grado en Criminología (UNED).</li>
+                <li>Máster en IA e Innovación (Founderz).</li>
+                <li>MBA (UCM).</li>
+                <li>Fast MBA (Instituto de Emprendimiento Avanzado).</li>
+            </ul>
+        </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank">LinkedIn</a>
-                <a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a></li>
+                    <li><a href="tel:+34666305194">+34 666 305 194</a></li>
+                    <li><a href="contacto.html">Formulario de consulta</a></li>
+                </ul>
             </div>
-            <span style="font-size: 0.8rem; color: #666;">&copy; 2026 Mariola Valderraín Navarro.</span>
+            <div class="footer-col">
+                <h4>Sígueme</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Políticas</h4>
+                <ul>
+                    <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="cookies.html">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span style="font-size: 0.8rem; color: #888;">&copy; 2026 Mariola Valderraín Navarro. Todos los derechos reservados.</span>
         </div>
     </footer>
-
 </body>
 </html>
