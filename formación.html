@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación | Mariola Valderraín Navarro</title>
+    <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg?v=3">
+    <style>
+        /* Pega aquí exactamente el mismo bloque <style> de tu index.html */
+        :root { --color-fondo: #ffffff; --color-texto: #1a1a1a; --color-oscuro: #111111; --color-rubi: #B01A23; --color-gris-borde: #dddddd; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: var(--color-texto); line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: var(--color-oscuro); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333; }
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-family: "Georgia", serif; color: #fff; transition: color 0.3s;}
+        .logo:hover { color: var(--color-rubi); }
+        nav ul { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; align-items: center; flex-wrap: wrap; }
+        nav a { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; color: #ccc; }
+        nav a:hover, nav a.activo { color: var(--color-rubi); }
+        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); font-weight: bold; }
+        
+        .page-header { padding: 80px 20px 40px; text-align: center; border-bottom: 1px solid var(--color-gris-borde); background: #f9f9f9; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 10px; }
+        .page-header h1 span { color: var(--color-rubi); }
+        
+        .timeline { max-width: 800px; margin: 60px auto 100px; padding: 0 20px; }
+        .timeline-item { border-left: 3px solid var(--color-rubi); padding-left: 30px; margin-bottom: 40px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -10px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: var(--color-rubi); }
+        .timeline-item h3 { margin: 0 0 5px 0; font-size: 1.5rem; color: var(--color-oscuro); }
+        .timeline-item span { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; display: block; margin-bottom: 10px; }
+        .timeline-item p { margin: 0; font-size: 1.1rem; color: #555; }
+        
+        footer { padding: 60px 20px 40px; background-color: var(--color-oscuro); color: #fff; text-align: center;}
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Mariola Valderraín Navarro</a>
+        <nav>
+            <ul>
+                <li><a href="especializacion.html">Especialización</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="charlas.html">Charlas</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>
+                <li><a href="formacion.html" class="activo">Formación</a></li>
+                <li><a href="https://wa.me/34666305194" target="_blank" class="btn-nav">WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Rigor <span style="color: #B01A23;">Académico</span></h1>
+            <p style="font-size: 1.2rem; color: #555; max-width: 600px; margin: 0 auto;">Una base multidisciplinar diseñada para comprender y transformar sistemas regulatorios, financieros y tecnológicos.</p>
+        </div>
+    </div>
+
+    <section class="timeline">
+        <div class="timeline-item">
+            <h3>Máster en IA e Innovación</h3>
+            <span>Founderz</span>
+            <p>Especialización en la aplicación de Inteligencia Artificial para la resolución de problemas complejos y la optimización de procesos de innovación.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Fast MBA</h3>
+            <span>Instituto de Emprendimiento Avanzado</span>
+            <p>Formación ejecutiva intensiva enfocada en la gestión empresarial, escalabilidad de proyectos y estrategia corporativa.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>MBA (Master of Business Administration)</h3>
+            <span>Universidad Complutense de Madrid (UCM)</span>
+            <p>Desarrollo de competencias directivas con un enfoque analítico y estratégico para liderar organizaciones de alto impacto.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Doble Grado en Derecho y Ciencias Políticas</h3>
+            <span>Universidad Complutense de Madrid (UCM)</span>
+            <p>Conocimiento profundo de los marcos regulatorios europeos y nacionales, y análisis de políticas públicas e institucionales.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>Grado en Criminología</h3>
+            <span>UNED</span>
+            <p>Estudio transversal del comportamiento humano, la sociología y los sistemas de prevención y seguridad.</p>
+        </div>
+    </section>
+
+    <footer><p>&copy; 2026 Mariola Valderraín Navarro</p></footer>
+</body>
+</html>
