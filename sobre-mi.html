@@ -1,137 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-    <header>
-        <a href="index.html" class="logo">Mariola Valderraín Navarro</a>
-        <nav>
-            <ul>
-                <li><a href="especializacion.html">Especialización</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="charlas.html">Charlas</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="formacion.html">Formación</a></li>
-                <li><a href="https://wa.me/34666305194" target="_blank" class="btn-nav">WhatsApp</a></li>
-            </ul>
-        </nav>
-    </header>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mí | Mariola Valderraín Navarro</title>
-    <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg">
-    <style>
-        /* (Pega aquí exactamente el mismo bloque <style> que tienes en el index.html para mantener la coherencia, 
-        añadiendo solo lo siguiente para los textos de esta página) */
-        :root { --color-fondo: #ffffff; --color-texto: #1a1a1a; --color-oscuro: #111111; --color-rubi: #B01A23; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; color: var(--color-texto); line-height: 1.6; }
-        a { color: inherit; text-decoration: none; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 20px; background-color: var(--color-oscuro); color: #fff; position: sticky; top: 0; border-bottom: 1px solid #333; z-index: 1000;}
-        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-family: "Georgia", serif; transition: color 0.3s;}
-        .logo:hover { color: var(--color-rubi); }
-        nav ul { list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; align-items: center; flex-wrap: wrap; }
-        nav a { font-size: 0.7rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; color: #ccc; }
-        nav a:hover, nav a.activo { color: var(--color-rubi); }
-        .btn-nav { border: 2px solid var(--color-rubi); padding: 8px 18px; border-radius: 30px; color: #fff; background-color: var(--color-rubi); font-weight: bold; }
-        .page-header { padding: 60px 20px 20px; }
-        .page-header h1 { font-size: 2.5rem; max-width: 800px; line-height: 1.2; font-weight: 600; margin-bottom: 40px; }
-        .page-header h1 span { color: var(--color-rubi); }
-        .about-content { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; padding: 40px 20px 100px; align-items: start; }
-        .text-block p { font-size: 1.1rem; color: #444; margin-bottom: 20px; }
-        .awards-box { background: #f9f9f9; padding: 30px; border-left: 4px solid var(--color-rubi); }
-        .awards-box h3 { margin-top: 0; color: var(--color-oscuro); text-transform: uppercase; letter-spacing: 1px; }
-        .awards-box ul { padding-left: 20px; color: #555; }
-        .awards-box li { margin-bottom: 10px; }
-        /* Copia el CSS del footer del index aquí */
-        footer { padding: 60px 20px 40px; background-color: var(--color-oscuro); color: #fff; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h4 { color: var(--color-rubi); text-transform: uppercase; letter-spacing: 1px; font-size: 0.9rem; margin-bottom: 20px; }
-        .footer-col ul { list-style: none; padding: 0; margin: 0; }
-        .footer-col ul li { margin-bottom: 10px; }
-        .footer-col a { color: #ccc; font-size: 0.85rem; transition: 0.3s; }
-        .footer-bottom { border-top: 1px solid #333; padding-top: 30px; text-align: center; }
-        @media (max-width: 768px) { .about-content { grid-template-columns: 1fr; } nav ul { display: none;} }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trayectoria, premios y experiencia vital de Mariola Valderraín Navarro.">
+  <title>Sobre mí | Mariola Valderraín Navarro</title>
+  <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg?v=3">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">Mariola Valderraín Navarro</a>
-        <nav>
-            <ul>
-                <li><a href="especializacion.html">Especialización</a></li>
-                <li><a href="sobre-mi.html" class="activo">Sobre mí</a></li>
-                <li><a href="charlas.html">Charlas</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="formacion.html">Formación</a></li>
-                <li><a href="mailto:aloiramfund@gmail.com" class="btn-nav">Contactar</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="index.html">Mariola Valderraín Navarro</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <ul><li><a class="active" href="sobre-mi.html">Sobre mí</a></li><li><a href="especializacion.html">Especialización</a></li><li><a href="charlas.html">Charlas</a></li><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="contacto.html">Contacto</a></li><li><a class="btn-nav" href="https://wa.me/34666305194?text=Hola%20Mariola,%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20hacerte%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    </nav>
+  </header>
 
-    <div class="container page-header">
-        <h1>Más que relato: estratega de impacto, <span>analista de políticas y emprendedora sistémica.</span></h1>
-    </div>
-
-    <section class="container about-content">
-        <div class="text-block">
-            <h2 style="font-size: 2rem;">Quién soy</h2>
-            <p>Mi trayectoria profesional en la intersección de la economía regenerativa, las finanzas de impacto y la innovación social no se entiende sin mi experiencia vital. Desde joven, la disciplina y la perseverancia han sido los pilares de mi día a día, forjados a través de años de entrenamiento como <strong>taekwondista</strong>. Esa misma sensibilidad y capacidad de estructurar ideas complejas se nutrió durante mi paso por el <strong>bachillerato de artes</strong>, enseñándome que la creatividad es indispensable para resolver los problemas sistémicos de nuestra era.</p>
-            <p>Hoy, con base en Madrid, canalizo esa misma disciplina estratégica como Directora de Fundraising en Talento para el Futuro y como fundadora de Mulching Regenerativo. Poseo un perfil 360º respaldado por una formación académica incesante, que me permite no solo imaginar soluciones, sino dotarlas de la infraestructura financiera y regulatoria para que se hagan realidad.</p>
-            <p>Mi compromiso con la acción climática y el liderazgo me ha llevado a cruzar fronteras, representando la innovación en la Cumbre del Clima (COP28) en Dubái y consolidando alianzas para reducir la brecha de financiación en proyectos tecnológicos liderados por mujeres.</p>
-        </div>
-        
-        <div class="awards-box">
-            <h3>Premios y Reconocimientos</h3>
-            <ul>
-                <li><strong>Top 50 World Women 2024</strong> - Häagen-Dazs.</li>
-                <li><strong>Ganadora Generación Clima (COP28)</strong> - Dubái (MITECO).</li>
-                <li><strong>Finalista Internacional</strong> - Ashoka Changemakers Challenge II.</li>
-                <li><strong>Reconocimiento en Vitoria</strong> a la innovación y liderazgo.</li>
-                <li><strong>Jurado Oficial</strong> - Premios Emprende Coca-Cola.</li>
-                <li><strong>Galardonada</strong> - Premios Compluemprende (UCM).</li>
-                <li><strong>Publicación Docta UCM</strong> - TFG sobre Startups y Empresas Sociales.</li>
-                <li><strong>Ganadora Invest Day</strong> - Iniciativa FemTech HERA (FPDI).</li>
-            </ul>
-            
-            <h3 style="margin-top: 30px;">Formación Clave</h3>
-            <ul>
-                <li>Doble Grado en Derecho y Ciencias Políticas (UCM).</li>
-                <li>Grado en Criminología (UNED).</li>
-                <li>Máster en IA e Innovación (Founderz).</li>
-                <li>MBA (UCM).</li>
-                <li>Fast MBA (Instituto de Emprendimiento Avanzado).</li>
-            </ul>
-        </div>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Sobre mí</p>
+        <h1>Estratega de impacto con mirada institucional, creatividad aplicada y disciplina de ejecución.</h1>
+      </div>
     </section>
+    <section class="section">
+      <div class="container two-column">
+        <div>
+          <h2>Quién soy como persona</h2>
+          <p>Mi forma de trabajar nace de una mezcla poco obvia: creatividad, disciplina y sensibilidad por los sistemas complejos. El bachillerato de artes me enseñó a mirar los problemas desde ángulos distintos, a ordenar intuiciones y a convertir ideas abstractas en propuestas comprensibles.</p>
+          <p>Durante años, el taekwondo me dio una estructura mental muy concreta: constancia, foco, resiliencia y respeto por el proceso. Esa experiencia vital sigue estando en mi manera de diseñar estrategia: observar, decidir, entrenar, ajustar y ejecutar.</p>
+          <p>Hoy aplico esa combinación a proyectos de impacto, financiación, innovación social y economía regenerativa. Me interesa que las buenas ideas no se queden en relato, sino que encuentren la arquitectura institucional, financiera y narrativa que necesitan para existir.</p>
 
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <ul>
-                    <li><a href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a></li>
-                    <li><a href="tel:+34666305194">+34 666 305 194</a></li>
-                    <li><a href="contacto.html">Formulario de consulta</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Sígueme</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/mariolavn/" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Políticas</h4>
-                <ul>
-                    <li><a href="privacidad.html">Política de Privacidad</a></li>
-                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
-                    <li><a href="cookies.html">Política de Cookies</a></li>
-                </ul>
-            </div>
+          <div class="press-box">
+            <h3>Bio breve para prensa y eventos</h3>
+            <p>Mariola Valderraín Navarro es estratega de financiación de impacto, analista de políticas públicas y fundadora de Aloiramfund. Su trabajo conecta regulación, innovación social, alianzas institucionales y fundraising para que proyectos con propósito puedan acceder a financiación pública, europea, filantrópica y estratégica. Ha participado en espacios como COP28, Ashoka Changemakers, Capital Radio y programas de emprendimiento de impacto.</p>
+          </div>
         </div>
-        <div class="container footer-bottom">
-            <span style="font-size: 0.8rem; color: #888;">&copy; 2026 Mariola Valderraín Navarro. Todos los derechos reservados.</span>
-        </div>
-    </footer>
+        <aside class="card">
+          <span class="meta">Premios y trayectoria</span>
+          <ul class="check-list">
+            <li>Representación en COP28 en Dubái.</li>
+            <li>Finalista de Ashoka Changemakers.</li>
+            <li>Reconocimiento al liderazgo en Vitoria.</li>
+            <li>Jurado oficial de Premios Emprende Coca-Cola.</li>
+            <li>Premios Compluemprende UCM.</li>
+            <li>Publicación académica en Docta UCM del TFG sobre startups sociales.</li>
+            <li>Caso de éxito HERA, iniciativa FemTech vinculada a FPDI.</li>
+            <li>MBA UCM.</li>
+            <li>Fast MBA IEA, Instituto de Emprendimiento Avanzado.</li>
+            <li>Top 50 World Women Impact.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Contacto</h4><ul><li><a href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a></li><li><a href="tel:+34666305194">+34 666 305 194</a></li><li><a href="contacto.html">Formulario de consulta</a></li></ul></div>
+      <div><h4>Sígueme</h4><ul><li><a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.instagram.com/mariolavn/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+      <div><h4>Políticas</h4><ul><li><a href="cookies.html">Política de cookies</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="aviso-legal.html">Aviso legal</a></li></ul></div>
+    </div>
+    <div class="container footer-bottom">© 2026 Mariola Valderraín Navarro. Todos los derechos reservados.</div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

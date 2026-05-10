@@ -1,24 +1,59 @@
-<header>
-        <a href="index.html" class="logo">Mariola Valderraín Navarro</a>
-        <nav>
-            <ul>
-                <li><a href="especializacion.html">Especialización</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="charlas.html">Charlas</a></li>
-                <li><a href="publicaciones.html">Publicaciones</a></li>
-                <li><a href="formacion.html">Formación</a></li>
-                <li><a href="https://wa.me/34666305194" target="_blank" class="btn-nav">WhatsApp</a></li>
-            </ul>
-        </nav>
-    </header>
-<section class="container" style="padding: 80px 20px; max-width: 600px;">
-    <h1 style="font-size: 3rem;">Hablemos de <span style="color: #B01A23;">tu proyecto</span></h1>
-    <p style="font-size: 1.1rem; color: #555; margin-bottom: 40px;">También puedes enviarme un <a href="https://wa.me/34666305194" style="color:#B01A23; font-weight:bold;">WhatsApp directo</a> o escribirme a aloiramfund@gmail.com.</p>
-    
-    <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-        <input type="text" name="name" placeholder="Tu nombre" style="padding: 15px; font-size: 1rem; border: 1px solid #ccc;" required>
-        <input type="email" name="email" placeholder="Tu email" style="padding: 15px; font-size: 1rem; border: 1px solid #ccc;" required>
-        <textarea name="message" placeholder="¿Cómo puedo ayudarte?" style="padding: 15px; font-size: 1rem; border: 1px solid #ccc; min-height: 150px;" required></textarea>
-        <button type="submit" style="padding: 15px; background: #B01A23; color: white; font-weight: bold; border: none; cursor: pointer;">Enviar Mensaje</button>
-    </form>
-</section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto y formulario de consulta de Mariola Valderraín Navarro.">
+  <title>Contacto | Mariola Valderraín Navarro</title>
+  <link rel="icon" type="image/jpeg" href="foto-miniatura.jpg?v=3">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Mariola Valderraín Navarro</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <ul><li><a href="sobre-mi.html">Sobre mí</a></li><li><a href="especializacion.html">Especialización</a></li><li><a href="charlas.html">Charlas</a></li><li><a href="publicaciones.html">Publicaciones</a></li><li><a class="active" href="contacto.html">Contacto</a></li><li><a class="btn-nav" href="https://wa.me/34666305194?text=Hola%20Mariola,%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20hacerte%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">Consulta</p>
+        <h1>Cuéntame qué estás construyendo y qué tipo de financiación necesitas.</h1>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contacto directo</h2>
+          <p class="lead">Sin agendas externas ni pasos innecesarios. Puedes escribirme por correo, WhatsApp o usar el formulario para que se abra un email con tu consulta preparada.</p>
+          <div class="actions"><a class="btn" href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a><a class="btn secondary" href="https://wa.me/34666305194?text=Hola%20Mariola,%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20hacerte%20una%20consulta." target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+        <form class="form-panel" id="consultation-form">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="tipo">Tipo de proyecto</label>
+          <select id="tipo" name="tipo">
+            <option>Fundraising</option>
+            <option>Subvenciones europeas</option>
+            <option>Alianzas institucionales</option>
+            <option>Charla o medio</option>
+            <option>Otro</option>
+          </select>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button class="btn" type="submit">Enviar consulta por email</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid"><div><h4>Contacto</h4><ul><li><a href="mailto:aloiramfund@gmail.com">aloiramfund@gmail.com</a></li><li><a href="tel:+34666305194">+34 666 305 194</a></li><li><a href="contacto.html">Formulario de consulta</a></li></ul></div><div><h4>Sígueme</h4><ul><li><a href="https://www.linkedin.com/in/mariola-valderrain-navarro/" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.instagram.com/mariolavn/" target="_blank" rel="noopener">Instagram</a></li></ul></div><div><h4>Políticas</h4><ul><li><a href="cookies.html">Política de cookies</a></li><li><a href="privacidad.html">Política de privacidad</a></li><li><a href="aviso-legal.html">Aviso legal</a></li></ul></div></div>
+    <div class="container footer-bottom">© 2026 Mariola Valderraín Navarro. Todos los derechos reservados.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
