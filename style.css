@@ -136,10 +136,41 @@ p { color: var(--muted); font-size: 1.08rem; }
 .dark { color: #fff; background: var(--dark); }
 .dark p { color: #ded6cf; }
 
-.impact-strip { margin-top: 28px; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
-.impact-box { padding: 18px; border: 1px solid var(--line); background: #fff; }
-.impact-box strong { display: block; color: var(--ruby); font-size: clamp(1.9rem, 4vw, 3.2rem); line-height: 1; }
-.impact-box span { display: block; margin-top: 8px; font-size: .84rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; }
+.impact-strip { 
+  margin-top: 35px; 
+  display: flex;         /* Cambiamos de grid a flex para control total */
+  flex-direction: row;   /* Forzamos que siempre sea una fila */
+  justify-content: flex-start; 
+  gap: 40px;             /* Espacio entre los tres bloques */
+  border: none;          /* Eliminamos cualquier borde residual */
+}
+
+.impact-box { 
+  padding: 0; 
+  border: none !important; /* Eliminamos el borde de las cajitas */
+  background: transparent; 
+  text-align: left;
+  white-space: nowrap;     /* Evita que el texto baje de línea */
+}
+
+/* Estilo del número */
+.impact-box strong { 
+  display: block; 
+  color: var(--ruby); 
+  font-size: clamp(2rem, 3vw, 2.8rem); 
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* Estilo del texto debajo */
+.impact-box span { 
+  display: block; 
+  font-size: 0.7rem; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+  letter-spacing: 0.1em;
+  color: var(--ink); 
+}
 
 .logo-marquee { overflow: hidden; border-block: 1px solid var(--line); background: #fff; }
 .logo-track { display: flex; width: max-content; animation: marquee 24s linear infinite; }
