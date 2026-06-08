@@ -221,13 +221,22 @@ p { color: var(--muted); font-size: 1.08rem; }
    REDES SOCIALES (Estilo Tarjetas Premium)
    ========================================= */
 /* Estilo base para las tarjetas de newsletter */
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
 .newsletter-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
+  min-height: 550px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -239,7 +248,7 @@ p { color: var(--muted); font-size: 1.08rem; }
 
 .newsletter-thumb {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   display: block;
 }
@@ -251,6 +260,21 @@ p { color: var(--muted); font-size: 1.08rem; }
   line-height: 1.4;
 }
 
+.meta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--ruby);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* Ajuste móvil */
+@media (max-width: 900px) {
+  .newsletter-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .newsletter-grid { grid-template-columns: 1fr; }
+}
 .meta {
   font-size: 0.75rem;
   text-transform: uppercase;
