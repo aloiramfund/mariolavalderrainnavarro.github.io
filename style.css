@@ -220,10 +220,28 @@ p { color: var(--muted); font-size: 1.08rem; }
 /* =========================================
    REDES SOCIALES (Estilo Tarjetas Premium)
    ========================================= */
+/* Estilo base para las tarjetas de newsletter */
 .newsletter-card {
   display: block;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-color: var(--ruby);
+}
+
+.newsletter-thumb {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
 }
 
 .newsletter-card h3 {
@@ -233,11 +251,13 @@ p { color: var(--muted); font-size: 1.08rem; }
   line-height: 1.4;
 }
 
-.newsletter-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--ruby);
+.meta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--ruby);
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
-
 .social-embed { 
   display: grid; 
   /* auto-fit hace que pasen a 1 columna automáticamente en pantallas pequeñas sin necesidad de media queries */
