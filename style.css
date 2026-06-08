@@ -229,6 +229,28 @@ p { color: var(--muted); font-size: 1.08rem; }
   align-items: start; /* Evita que las tarjetas se estiren de forma desigual si un post es más largo que otro */
 }
 
+/* Forzamos 4 columnas y mayor altura */
+.social-embed { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+  gap: 20px; 
+  align-items: stretch; /* Todas las tarjetas tendrán la misma altura */
+}
+
+/* Aumentamos la altura de las tarjetas de LinkedIn */
+.linkedin-badge-wrap { 
+  min-height: 500px; /* Ajusta este valor según prefieras que sean de altas */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Forzamos al iframe a ocupar todo el espacio disponible */
+.linkedin-embed, .linkedin-embed iframe {
+  width: 100% !important;
+  height: 100% !important;
+  flex-grow: 1;
+}
+
 /* Diseño de la tarjeta contenedor */
 .instagram-card, .linkedin-badge-wrap { 
   display: block; 
