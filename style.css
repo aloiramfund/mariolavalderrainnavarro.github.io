@@ -280,6 +280,31 @@ p { color: var(--muted); font-size: 1.08rem; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Sombra muy elegante y sutil */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* LinkedIn: 4 columnas */
+.social-embed.linkedin-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Instagram: 3 columnas */
+.social-embed.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Aseguramos altura y comportamiento */
+.linkedin-badge-wrap { min-height: 550px; }
+.instagram-card { min-height: 450px; }
+
+/* Ajuste móvil: para que no se vea horrible en el teléfono */
+@media (max-width: 860px) {
+  .social-embed.linkedin-grid, 
+  .social-embed.instagram-grid {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
+
 
 /* Efecto de elevación al pasar el ratón (Hover) */
 .instagram-card:hover, .linkedin-badge-wrap:hover {
