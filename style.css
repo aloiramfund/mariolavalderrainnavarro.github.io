@@ -220,6 +220,23 @@ p { color: var(--muted); font-size: 1.08rem; }
 /* =========================================
    REDES SOCIALES (Estilo Tarjetas Premium)
    ========================================= */
+.newsletter-card {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 0;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.newsletter-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--ruby);
+}
 
 .social-embed { 
   display: grid; 
