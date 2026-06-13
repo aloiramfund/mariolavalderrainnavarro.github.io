@@ -217,6 +217,7 @@ p { color: var(--muted); font-size: 1.08rem; }
 .certificate { min-height: 140px; padding: 18px; border: 1px dashed var(--line); background: #fff; }
 .certificate span { display: block; margin-top: 8px; color: var(--muted); }
 .certificate img { width: 100%; border: 1px solid var(--line); }
+
 /* =========================================
    REDES SOCIALES (Estilo Tarjetas Premium)
    ========================================= */
@@ -275,13 +276,7 @@ p { color: var(--muted); font-size: 1.08rem; }
 @media (max-width: 600px) {
   .newsletter-grid { grid-template-columns: 1fr; }
 }
-.meta {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  color: var(--ruby);
-  font-weight: bold;
-  letter-spacing: 0.05em;
-}
+
 .social-embed { 
   display: grid; 
   /* auto-fit hace que pasen a 1 columna automáticamente en pantallas pequeñas sin necesidad de media queries */
@@ -324,6 +319,7 @@ p { color: var(--muted); font-size: 1.08rem; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.03); /* Sombra muy elegante y sutil */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 /* LinkedIn: 4 columnas */
 .social-embed.linkedin-grid {
   display: grid;
@@ -348,7 +344,7 @@ p { color: var(--muted); font-size: 1.08rem; }
   .social-embed.instagram-grid {
     grid-template-columns: 1fr; /* 1 columna en móviles */
   }
-
+} /* <--- ¡ESTA ERA LA LLAVE QUE FALTABA! ---> */
 
 /* Efecto de elevación al pasar el ratón (Hover) */
 .instagram-card:hover, .linkedin-badge-wrap:hover {
@@ -378,6 +374,7 @@ p { color: var(--muted); font-size: 1.08rem; }
   text-align: center;
   color: var(--muted);
 }
+
 .table { width: 100%; border-collapse: collapse; margin: 22px 0; }
 .table th, .table td { padding: 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
 .table th { background: var(--soft); }
