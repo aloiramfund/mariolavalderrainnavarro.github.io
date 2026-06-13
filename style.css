@@ -15,7 +15,11 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Times New Roman", Times, serif;
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap');
+
+body        { font-family: 'DM Sans', sans-serif; }
+h1, h2      { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
+  
   line-height: 1.55;
   text-rendering: optimizeLegibility;
 }
